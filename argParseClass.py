@@ -7,9 +7,9 @@ class CmdArgs:
         self.height = height
 
 
-    def do_things():
-        vol = (math.pi) * (radius **2) * (height)
-        print ("Volume of a Cylinder with radius %s and height %s is %s" % (args.radius, args.height, vol))
+    def do_things(self):
+        vol = (math.pi) * (self.radius **2) * (self.height)
+        print ("Volume of a Cylinder with radius %s and height %s is %s" % (self.radius, self.height, vol))
 
 def get_args():
         parser = argparse.ArgumentParser(description='Calculate volume of a cylinder')
@@ -18,6 +18,8 @@ def get_args():
 
 
         return parser.parse_args()
+
+
 
     
 def main(args):
