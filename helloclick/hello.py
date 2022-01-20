@@ -35,3 +35,13 @@ def say(config, name, repeat, age, out):
     click.echo('Home directory is {}'.format(config.home_directory))
     for x in range(repeat):
         click.echo("Hello {}, you are {}".format(name, age), file=out)
+
+
+@cli.command()    
+@click.option('--AAA', default='World' ,help='')
+@pass_config
+def foo(config, AAA):
+    """This is the foo command 
+        Second line :D
+    """
+    click.echo("Hello {}".format(AAA))
