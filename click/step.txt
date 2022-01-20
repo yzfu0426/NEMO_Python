@@ -1,0 +1,5 @@
+pip install click
+mkdir click
+cd click
+virtualenv venv(it will make a directory called venv)
+activate the virtual environment by source venv/bin/activate
