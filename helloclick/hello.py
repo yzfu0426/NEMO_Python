@@ -20,7 +20,7 @@ def cli(config, verbose, home_directory):
     
 
 
-
+#Sub command 1
 @cli.command()
 @click.option('--name', default='World' ,help='Name of the person')
 @click.option('--repeat', default=1, type = int, help="Number of times to repeat")
@@ -36,7 +36,7 @@ def say(config, name, repeat, age, out):
     for x in range(repeat):
         click.echo("Hello {}, you are {}".format(name, age), file=out)
 
-
+#Sub command 2
 @cli.command()    
 @click.option('--AAA', default='World' ,help='')
 @pass_config
