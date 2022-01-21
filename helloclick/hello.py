@@ -42,6 +42,6 @@ def say(config, name, repeat, age, out):
 @pass_config
 def foo(config, AAA):
     """This is the foo command 
-        Second line :D
+        Second line but is not working :D
     """
     click.echo("Hello {}".format(AAA))
