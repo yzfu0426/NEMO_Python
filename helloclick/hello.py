@@ -45,3 +45,5 @@ def foo(config, AAA):
         Second line but is not working :D
     """
     click.echo("Hello {}".format(AAA))
+
+    #https://www.youtube.com/watch?v=kNke39OZ2k0
